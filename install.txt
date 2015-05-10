@@ -1,0 +1,3 @@
+1. http://www.howtogeek.com/112455/how-to-install-iis-8-on-windows-8/ IIS installation
+2. https://www.microsoft.com/en-us/download/details.aspx?id=39365 web tools for visual
+3. https://technet.microsoft.com/en-us/library/hh831475.aspx#AddApp add app to iis
