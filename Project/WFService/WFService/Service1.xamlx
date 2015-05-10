@@ -10,7 +10,7 @@
  xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
  xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <p1:Sequence sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <p1:Sequence>
     <p1:TextExpression.Namespaces>
       <sco:Collection x:TypeArguments="x:String" x:Name="__ReferenceID2">
         <x:String>System</x:String>
@@ -48,7 +48,7 @@
       <x:Reference>__ReferenceID1</x:Reference>
       <p1:Variable x:TypeArguments="x:String" Name="msg" />
     </p1:Sequence.Variables>
-    <Receive x:Name="__ReferenceID0" CanCreateInstance="True" sap2010:WorkflowViewState.IdRef="Receive_1" OperationName="Echo" ServiceContractName="p:IService">
+    <Receive x:Name="__ReferenceID0" OperationName="Echo" ServiceContractName="p:IService">
       <Receive.CorrelationInitializers>
         <RequestReplyCorrelationInitializer>
           <RequestReplyCorrelationInitializer.CorrelationHandle>
@@ -67,21 +67,24 @@
           <mca:CSharpReference x:TypeArguments="x:String">msg</mca:CSharpReference>
         </p1:OutArgument>
       </ReceiveParametersContent>
+      <sap2010:WorkflowViewState.IdRef>Receive_2</sap2010:WorkflowViewState.IdRef>
     </Receive>
-    <SendReply Request="{x:Reference __ReferenceID0}" DisplayName="SendReplyToReceive" sap2010:WorkflowViewState.IdRef="SendReply_1">
+    <SendReply Request="{x:Reference __ReferenceID0}" DisplayName="SendReplyToReceive">
       <SendParametersContent>
         <p1:InArgument x:TypeArguments="x:String" x:Key="outMsg">
           <mca:CSharpValue x:TypeArguments="x:String">msg</mca:CSharpValue>
         </p1:InArgument>
       </SendParametersContent>
+      <sap2010:WorkflowViewState.IdRef>SendReply_2</sap2010:WorkflowViewState.IdRef>
     </SendReply>
-    <sads:DebugSymbol.Symbol>d1NDOlxVc2Vyc1xBU1VTMVxEb2N1bWVudHNcQVBCIHByb2pla3RcYXBiXFByb2plY3RcV0ZTZXJ2aWNlXFdGU2VydmljZVxTZXJ2aWNlMS54YW1seAYNA08RAQEzBUYPAQhHBU0RAQJDC0NUAQo4DzwiAQlKC0pMAQM=</sads:DebugSymbol.Symbol>
+    <sap2010:WorkflowViewState.IdRef>Sequence_2</sap2010:WorkflowViewState.IdRef>
+    <sads:DebugSymbol.Symbol>d1djOlx1c2Vyc1xhc3VzMVxkb2N1bWVudHNcdmlzdWFsIHN0dWRpbyAyMDEzXFByb2plY3RzXFdGU2VydmljZVxXRlNlcnZpY2VcU2VydmljZTEueGFtbHgGDQNSEQEBMwVHDwEISAVPEQECQwtDVAEKOA88IgEJSwtLTAED</sads:DebugSymbol.Symbol>
   </p1:Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
-      <sap2010:ViewStateData Id="Receive_1" sap:VirtualizedContainerService.HintSize="255.333333333333,89.3333333333333" />
-      <sap2010:ViewStateData Id="SendReply_1" sap:VirtualizedContainerService.HintSize="255.333333333333,89.3333333333333" />
-      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="277.333333333333,342.666666666667">
+      <sap2010:ViewStateData Id="Receive_2" sap:VirtualizedContainerService.HintSize="255.333333333333,89.3333333333333" />
+      <sap2010:ViewStateData Id="SendReply_2" sap:VirtualizedContainerService.HintSize="255.333333333333,89.3333333333333" />
+      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="277.333333333333,342.666666666667">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
